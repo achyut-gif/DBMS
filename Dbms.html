@@ -1,0 +1,151 @@
+<html>
+<head>
+<title> Database Management System </title>
+<link rel="stylesheet" type="text/css" href="a.css">
+</head>
+<body>
+<h1> Database Management System </h1>
+<hr>
+<div>
+<h2> Data </h2>
+<p>Data are the collection of raw facts and figures which are unorganized, uninterpreted, and isolated, which don’t give any particular sense. They are randomly gathered, so they can be processed to obtain the desired result. <br><br>Example: Ram, 17, Pokhara, 18</p>
+</div>
+<hr>
+<div>
+<h2> Information </h2>
+<p>Information are the processed form of data. Information gives a meaningful result after data are interpreted. <br><br>Example: Ram is 17 years old and lives in Pokhara 18.</p>
+</div>
+<hr>
+<div>
+<h2> Drawbacks of Unorganized Data </h2>
+<ol>
+<li>Some information was stored in more than one file (Data redundancy).</li>
+<li>Difficult to present data from the user’s view.</li>
+<li>Data security was a major problem.</li>
+<li>Data processing and manipulation were difficult.</li>
+<li>Data retrieval was very slow.</li>
+</ol>
+</div>
+<hr>
+<div>
+<h2> Database </h2>
+<p>A database is a collection of interrelated data or entities stored in tabular form. It is a systematic and organized form of data, allowing the user to retrieve or access data quickly. Examples include a telephone directory, dictionary, marks ledger, and customer records.</p>
+<table border="1">
+<tr><th>Roll No</th><th>Name</th><th>Address</th><th>Contact</th></tr>
+<tr><td>1</td><td>Aaishu Karki</td><td>Pokhara</td><td>0090786</td></tr>
+<tr><td>2</td><td>Bishaka Lohani</td><td>Bhairab Tole</td><td>3452423</td></tr>
+</table>
+<p>Note: Column of a database table is known as a field. Row of a database table is known as a record.</p>
+</div>
+<hr>
+<div>
+<h2> Limitations of Flat File System </h2>
+<ol>
+<li>Data security system is a major problem.</li>
+<li>Data sharing was almost impossible or difficult.</li>
+<li>Records were stored in more than one file (Data redundancy).</li>
+<li>Difficult to represent data through a user perspective.</li>
+<li>Difficult to process complex queries.</li>
+</ol>
+</div>
+<hr>
+<div>
+<h2> Database Management System (DBMS) </h2>
+<p>A DBMS is a computerized record-keeping system. It defines, manipulates, and manages the database, allowing access to files, record updates, and data retrieval. Examples include MS Access, Oracle, MySQL, Fox-Pro, D-Base, etc.</p>
+</div>
+<hr>
+<div>
+<h2> Advantages of DBMS </h2>
+<ol>
+<li>Sharing data among multiple users or computers.</li>
+<li>Reduces data redundancy (duplication of data).</li>
+<li>Facilitates data backup and recovery.</li>
+<li>Improves data security through restricted access.</li>
+<li>Allows multiple user interfaces.</li>
+<li>Ensures data integrity and consistency.</li>
+</ol>
+</div>
+<hr>
+<div>
+<h2> Disadvantages of DBMS </h2>
+<ol>
+<li>Expensive to run and operate.</li>
+<li>Difficult to incorporate the latest technology.</li>
+<li>Backup is needed to avoid data loss.</li>
+</ol>
+</div>
+<hr>
+<div>
+<h2> Database Models </h2>
+<p>A database model defines the logical design and structure of a database and the way data can be stored, organized, and manipulated.</p>
+<h3>Hierarchical Model</h3>
+<p>Data are arranged in a tree-like structure. Parent-child relationships are used, where one parent can have multiple children, but each child only one parent.</p>
+<h3>Network Model</h3>
+<p>More flexible than hierarchical, it allows many-to-many relationships, where a child may relate to multiple parents.</p>
+<h3>Relational Model</h3>
+<p>The most widely used model. Data are stored in tables (relations). Each row represents a unique record.</p>
+</div>
+<hr>
+<div>
+<h2> Centralized vs Distributed Database </h2>
+<h3>Centralized Database</h3>
+<ul>
+<li>Simple type, located at a single location.</li>
+<li>One server for all data.</li>
+<li>Suitable for small industries.</li>
+<li>Easy maintenance but less security.</li>
+</ul>
+<h3>Distributed Database</h3>
+<ul>
+<li>Complex type, spread across multiple locations.</li>
+<li>Multiple interconnected servers.</li>
+<li>Suitable for large industries and organizations.</li>
+<li>Higher maintenance cost, but higher bandwidth and backup reliability.</li>
+</ul>
+</div>
+<hr>
+<div>
+<h2> Structure Query Language (SQL) </h2>
+<p>SQL stands for Structured Query Language, designed for accessing and managing data in relational databases.</p>
+<h3>Sub-Languages of SQL</h3>
+<ol>
+<li><b>DDL (Data Definition Language)</b>: Defines database structure (CREATE, ALTER, DROP)</li>
+<li><b>DML (Data Manipulation Language)</b>: Manipulates data (INSERT, UPDATE, DELETE, SELECT)</li>
+<li><b>DCL (Data Control Language)</b>: Controls access to data (GRANT, REVOKE)</li>
+</ol>
+</div>
+<hr>
+<div>
+<h2> Entity Relationship (ER) Model </h2>
+<p>Used for database design, representing real-world entities and their relationships visually.</p>
+<ul>
+<li><b>Entity</b>: Real-world objects.</li>
+<li><b>Attributes</b>: Properties of an entity.</li>
+<li><b>Relationships</b>: Associations among entities.</li>
+</ul>
+</div>
+<hr>
+<div>
+<h2> Database Administrator (DBA) </h2>
+<p>The person responsible for managing, securing, and maintaining the database system.</p>
+<h3>Responsibilities</h3>
+<ol>
+<li>Database installation, backup, and upgrades.</li>
+<li>Maintaining security and recovery processes.</li>
+<li>Defining user roles and permissions.</li>
+<li>Managing database design and reports.</li>
+</ol>
+</div>
+<hr>
+<div>
+<h2> Normalization </h2>
+<p>Normalization is the process of organizing database tables to reduce redundancy and improve data integrity. EF Codd introduced its rules in the 1970s.</p>
+<h3>Normal Forms</h3>
+<p><b>1NF:</b> Eliminates duplicate columns and creates separate tables for related data.</p>
+<p><b>2NF:</b> Removes partial dependency on primary keys and moves them to separate tables.</p>
+<p><b>3NF:</b> Removes columns not dependent on primary key.</p>
+</div>
+<hr>
+<p style="text-align:center">© Achyut Pudasaini, 2025</p>
+</body>
+</html>
